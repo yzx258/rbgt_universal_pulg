@@ -52,6 +52,7 @@ public class RabbitDirectConfig {
      */
     @Bean
     Binding binding() {
+        // 绑定队列到交换机上
         return BindingBuilder.bind(queue()).to(directExchange()).with("direct");
     }
 

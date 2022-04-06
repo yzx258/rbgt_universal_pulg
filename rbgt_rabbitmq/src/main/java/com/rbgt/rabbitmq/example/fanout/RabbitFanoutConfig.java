@@ -49,11 +49,13 @@ public class RabbitFanoutConfig {
 
     @Bean
     Binding bindingOne() {
+        // 绑定队列到交换机上
         return BindingBuilder.bind(queueOne()).to(fanoutExchange());
     }
 
     @Bean
     Binding bindingTwo() {
+        // 绑定队列到交换机上
         return BindingBuilder.bind(queueTwo()).to(fanoutExchange());
     }
 

@@ -50,6 +50,7 @@ public class RabbitTopicConfig {
      */
     @Bean
     Binding bindingXiaomi() {
+        // 绑定队列到交换机上
         return BindingBuilder.bind(xiaomi()).to(topicExchange()).with("xiaomi.#");
     }
 
@@ -60,6 +61,7 @@ public class RabbitTopicConfig {
      */
     @Bean
     Binding bindingHuawei() {
+        // 绑定队列到交换机上
         return BindingBuilder.bind(huawei()).to(topicExchange()).with("huawei.#");
     }
 
@@ -70,6 +72,7 @@ public class RabbitTopicConfig {
      */
     @Bean
     Binding bindingPhone() {
+        // 绑定队列到交换机上
         return BindingBuilder.bind(phone()).to(topicExchange()).with("#.phone.#");
     }
 
