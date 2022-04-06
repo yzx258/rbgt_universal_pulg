@@ -1,4 +1,4 @@
-package com.rbgt.rabbitmq.exl.direct;
+package com.rbgt.rabbitmq.example.direct;
 
 /**
  * FileName: DirectReceiver Author: linwd Date: 2021/5/3 11:36 Description: Direct策略的接收 History: <author> <time>
@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class DirectReceiver {
 
-    @RabbitListener(queues = "hello-queue")
+    @RabbitListener(queues = "direct-example-one")
     public void handle1(String msg) {
         System.out.println("DirectReceiver:" + msg);
     }

@@ -1,4 +1,6 @@
-package com.rbgt.rabbitmq.exl.direct;
+package com.rbgt.rabbitmq.example.direct;
+
+import java.util.LinkedHashMap;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
@@ -26,7 +28,7 @@ public class RabbitDirectConfig {
      */
     @Bean
     Queue queue() {
-        return new Queue("hello-queue");
+        return new Queue("direct-example-one");
     }
 
     /**
@@ -36,7 +38,11 @@ public class RabbitDirectConfig {
      */
     @Bean
     DirectExchange directExchange() {
-        return new DirectExchange(DIRECTNAME, true, false);
+        // 定义 - 广播交换机
+        DirectExchange directExchange = new DirectExchange(DIRECTNAME, true, false, new LinkedHashMap<>());
+        // 设置 - 允许延迟消息发送
+        directExchange.setDelayed(true);
+        return directExchange;
     }
 
     /**
