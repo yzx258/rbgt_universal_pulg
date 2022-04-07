@@ -1,6 +1,5 @@
 package com.rbgt.rabbitmq.example.channel;
 
-import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ChannelReceiver {
 
-    @RabbitListener(queues = "log_fanout_queue1")
+    // @RabbitListener(queues = "log_fanout_queue1")
     public void xfMsg(String msg) {
         System.out.println(msg);
     }
