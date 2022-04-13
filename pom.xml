@@ -17,6 +17,7 @@
 
     <modules>
         <module>rbgt_rabbitmq</module>
+        <module>rbgt_annotation</module>
         <module>rbgt_rabbitmq_api</module>
     </modules>
 
@@ -36,6 +37,12 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.0.M2</version>
         </dependency>
     </dependencies>
 
