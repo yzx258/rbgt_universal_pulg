@@ -52,6 +52,7 @@ public class UserInfoAspectUtils {
             // 获取 - 注解方法名称
             Method method = nv.className().getMethod(nv.method(), beanClass.getDeclaredField(nv.param()).getType());
 
+            // 获取 - 获取字段信息
             Field paramFiled = beanClass.getDeclaredField(nv.param());
             paramFiled.setAccessible(true);
 
