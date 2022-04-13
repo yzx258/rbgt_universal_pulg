@@ -29,7 +29,11 @@ public class UserDao {
     public UserBO findByUserId(String userId) {
         UserBO user = new UserBO();
         user.setId(UUID.randomUUID().toString());
-        user.setName("张三");
+        if (userId.equals("USER_ID_20220413001")) {
+            user.setName("张三");
+        } else if (userId.equals("USER_ID_20220413002")) {
+            user.setName("李四");
+        }
         user.setAge("12");
         System.out.println("根据用户ID查询用户信息:" + JSONUtil.toJsonStr(user));
         return user;
