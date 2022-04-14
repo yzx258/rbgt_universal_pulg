@@ -18,7 +18,7 @@
     <modules>
         <module>rbgt_rabbitmq</module>
         <module>rbgt_annotation</module>
-        <module>rbgt_rabbitmq_api</module>
+        <module>rbgt_spike</module>
     </modules>
 
 
