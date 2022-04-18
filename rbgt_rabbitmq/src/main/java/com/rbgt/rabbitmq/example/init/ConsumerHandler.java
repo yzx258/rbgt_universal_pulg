@@ -48,6 +48,7 @@ public class ConsumerHandler extends DefaultConsumer {
         // 调用监听者消息接收处理
         boolean result = listener.receiveMessage(message);
         System.out.println("result:" + result);
+        // 消息确认机制 - 能者多捞的数据
         super.getChannel().basicAck(envelope.getDeliveryTag(), false);
     }
 }
