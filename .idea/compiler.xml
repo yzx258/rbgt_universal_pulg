@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rbgt_annotation" />
+        <module name="rbgt_ddd" />
         <module name="rbgt_spike" />
         <module name="rbgt_rabbitmq" />
       </profile>
@@ -19,6 +20,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="rbgt_annotation" options="-parameters" />
+      <module name="rbgt_ddd" options="-parameters" />
       <module name="rbgt_rabbitmq" options="-parameters" />
       <module name="rbgt_spike" options="-parameters" />
       <module name="rbgt_universal_pulg" options="-parameters" />

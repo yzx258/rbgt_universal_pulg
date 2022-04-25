@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rbgt.rabbitmq.example.direct.RabbitDirectConfig;
+import com.rbgt.rabbitmq.example.user.direct.RabbitDirectConfig;
 
 import lombok.RequiredArgsConstructor;
 

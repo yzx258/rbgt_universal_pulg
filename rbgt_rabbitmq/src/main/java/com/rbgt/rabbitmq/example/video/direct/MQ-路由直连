@@ -1,0 +1,8 @@
+Routing之订阅模型Direct(直连)
+
+解决问题：在fanout模式中，一条消息，会被所有消费队列消费，在某种特定场景下，只需要某些队列消费即可
+
+在Direct模型下
+    队列与交换机的绑定，不能是任意绑定的，而是要指定一个RoutingKey(路由key)
+    消息在发送方在向Exchange发送消息时，也必须指定一个RoutingKey(路由key)
+    Exchange不在把消息交给每个绑定的队列，而是根据消息的RoutingKey进行判断，只有队列数据RoutingKey与消息的RoutingKey完全一致，消息才会推送
