@@ -11,6 +11,7 @@
         <module name="rbgt_ddd" />
         <module name="rbgt_spike" />
         <module name="rbgt_rabbitmq" />
+        <module name="rbgt_design" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="rbgt_annotation" options="-parameters" />
       <module name="rbgt_ddd" options="-parameters" />
+      <module name="rbgt_design" options="-parameters" />
       <module name="rbgt_rabbitmq" options="-parameters" />
       <module name="rbgt_spike" options="-parameters" />
       <module name="rbgt_universal_pulg" options="-parameters" />

@@ -20,6 +20,7 @@
         <module>rbgt_annotation</module>
         <module>rbgt_spike</module>
         <module>rbgt_ddd</module>
+        <module>rbgt_design</module>
     </modules>
 
 

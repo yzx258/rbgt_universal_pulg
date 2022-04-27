@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/rbgt_annotation/pom.xml" />
         <option value="$PROJECT_DIR$/rbgt_spike/pom.xml" />
         <option value="$PROJECT_DIR$/rbgt_ddd/pom.xml" />
+        <option value="$PROJECT_DIR$/rbgt_design/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
